@@ -71,5 +71,5 @@ if __name__ == "__main__":
     index = get_index_from_name(card_name)
     print("index of card \"{0}\" is {1}".format(card_name,index))
 
-    state = get_state(0)
+    state = get_state(index)
     print("Current State: ", state)
