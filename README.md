@@ -23,6 +23,7 @@ Needs get_cards() to have been run first
 
 
 Running the file whilst playing a file using Roon yields:
-Audio cards   : [' HifiBerry Digi HiFi wm8804-spdif-0', ' USB Audio']
+
+`Audio cards   : [' HifiBerry Digi HiFi wm8804-spdif-0', ' USB Audio']
 index from name:  HifiBerry Digi HiFi wm8804-spdif-0 = 0
-Current State:  {'state': 'playing', 'sample_rate_hz': 176400, 'number_of_channels': 2, 'bits_per_sample': 24}
+Current State:  {'state': 'playing', 'sample_rate_hz': 176400, 'number_of_channels': 2, 'bits_per_sample': 24}`
