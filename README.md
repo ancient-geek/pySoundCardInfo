@@ -1,5 +1,5 @@
 # pySoundCardInfo
-Very basic python module to get a list of available cards and the current sample rate, bits and channels of a given card.
+Very basic python module to get a list of available cards and the current state, sample rate, bits per sample and channels of a given card.
 Tested on a Raspberry Pi with two sound cards
 
 Usage:
