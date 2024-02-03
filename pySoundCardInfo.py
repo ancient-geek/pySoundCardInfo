@@ -15,7 +15,8 @@ def get_cards():
     for line in result.stdout.splitlines():
         if line[0:4] == "card" and line[4].isnumeric():
             index = int(line[4])
-            cards.append(get_name(index))            
+            card = {"index":index, "name":get_name(index)}
+            cards.append(card)            
     return cards
     
 
@@ -54,9 +55,10 @@ def get_state(index):
 
 ### Get the card index number from its name
 def get_index_from_name(name):
+    name = name.lower()
     for i in range(len(cards)):
-        if cards[i].find(name) >= 0:
-            return i
+        if cards[i]["name"].lower().find(name) >= 0:
+            return cards[i]["index"]
     return None
 
 
@@ -65,7 +67,9 @@ if __name__ == "__main__":
     cards = get_cards()
     print("Audio cards   :", cards)
 
-    print("index from name: {0} = {1}".format(cards[0],get_index_from_name(cards[0])))
+    card_name = "hifiberry"
+    index = get_index_from_name(card_name)
+    print("index of card \"{0}\" is {1}".format(card_name,index))
 
     state = get_state(0)
     print("Current State: ", state)
